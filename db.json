@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "name": "SERGEI",
+      "email": "mail@mail.ru",
+      "phone": "+77777777799",
+      "language": "Китайский",
+      "id": 1
+    }
+  ]
+}

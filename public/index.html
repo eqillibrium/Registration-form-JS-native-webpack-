@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="container__form">
+            <header class="header">
+                <h1 class="header__heading">Регистрация</h1>
+                <p class="header__text">Уже есть аккаунт? <a href="#" class="span"> Войти</a></p>
+            </header>
+            <section>
+                <form class="form">
+                    <div class="form__box">
+                        <label for="name" class="form__label">Имя</label>
+                        <input 
+                            type="text" 
+                            name="name" 
+                            id="name"
+                            value="" 
+                            class="form__input" 
+                            placeholder="Введите ваше имя">
+                    </div>
+                    <p class="help" id="nameHelp" style="visibility: hidden;"> Поле "Имя" обязательно</p>
+                    <div class="form__box">
+                        <label for="email" class="form__label">Email</label>
+                        <input 
+                            type="text" 
+                            name="email" 
+                            id="email"
+                            value=""  
+                            class="form__input" 
+                            placeholder="Введите ваш Email">
+                    </div>
+                    <p class="help" id="emailHelp" style="visibility: hidden;"> Поле "Email" обязательно</p>
+                    <div class="form__box">
+                        <label for="phone" class="form__label">Номер телефона</label>
+                        <input 
+                            type="text" 
+                            name="phone" 
+                            id="phone" 
+                            value="" 
+                            class="form__input" 
+                            placeholder="Введите ваше номер телефона">
+                    </div>
+                    <p class="help" id="phoneHelp" style="visibility: hidden;"> Поле "Номер телефона" обязательно</p>
+                    <div class="form__box">
+                        <label for="language" class="form__label">Язык</label>
+                        <div class="rel" id="rel">
+                            <input type="text" name="language" id="language" class="form__input" placeholder="Язык">
+                            <div class="abs" style="display: none;">
+                                <ul class="form__list" id="form__list">
+                                    <li class="form__list_option" id="russian" data-value="Русский">Русский</li>
+                                    <li class="form__list_option" id="english" data-value="Английский">Английский</li>
+                                    <li class="form__list_option" id="chinese" data-value="Китайский">Китайский</li>
+                                    <li class="form__list_option" id="spanish" data-value="Испанский">Испанский</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__box form__box_checkbox">
+                        <input class="form__checkbox" type="checkbox" id="agree" name="agree"> 
+                        <label for="agree"> Принимаю <a href="#" class="span">условия</a></p> использования </label>
+                    </div>
+                    <button type="button" id="btn" class="form__button_disabled" disabled>Зарегистрироваться</button> 
+                </form>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
